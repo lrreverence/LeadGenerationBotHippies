@@ -138,11 +138,16 @@ class LeadGenerationBot:
                         
         # Save leads
         state_name_mapping = {
-            'IL': 'Illinois',
-            'MO': 'Missouri', 
-            'IA': 'Iowa',
-            'WI': 'Wisconsin',
-            'AK': 'Alaska'
+            'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': 'Arkansas', 'CA': 'California',
+            'CO': 'Colorado', 'CT': 'Connecticut', 'DE': 'Delaware', 'FL': 'Florida', 'GA': 'Georgia',
+            'HI': 'Hawaii', 'ID': 'Idaho', 'IL': 'Illinois', 'IN': 'Indiana', 'IA': 'Iowa',
+            'KS': 'Kansas', 'KY': 'Kentucky', 'LA': 'Louisiana', 'ME': 'Maine', 'MD': 'Maryland',
+            'MA': 'Massachusetts', 'MI': 'Michigan', 'MN': 'Minnesota', 'MS': 'Mississippi', 'MO': 'Missouri',
+            'MT': 'Montana', 'NE': 'Nebraska', 'NV': 'Nevada', 'NH': 'New Hampshire', 'NJ': 'New Jersey',
+            'NM': 'New Mexico', 'NY': 'New York', 'NC': 'North Carolina', 'ND': 'North Dakota', 'OH': 'Ohio',
+            'OK': 'Oklahoma', 'OR': 'Oregon', 'PA': 'Pennsylvania', 'RI': 'Rhode Island', 'SC': 'South Carolina',
+            'SD': 'South Dakota', 'TN': 'Tennessee', 'TX': 'Texas', 'UT': 'Utah', 'VT': 'Vermont',
+            'VA': 'Virginia', 'WA': 'Washington', 'WV': 'West Virginia', 'WI': 'Wisconsin', 'WY': 'Wyoming'
         }
         state_name = state_name_mapping.get(state, state)
         self._save_leads(all_leads, state_name)
@@ -150,13 +155,58 @@ class LeadGenerationBot:
         return all_leads
     
     def _get_state_centers(self):
-        """Get center coordinates for target states"""
+        """Get center coordinates for all 50 states"""
         return {
-            'IL': (40.0000, -89.0000),  # Illinois center
-            'MO': (38.5000, -92.5000),  # Missouri center
-            'IA': (42.0000, -93.5000),  # Iowa center
-            'WI': (44.5000, -89.5000),  # Wisconsin center
-            'AK': (64.0000, -152.0000),  # Alaska center
+            'AL': (32.806671, -86.791130),  # Alabama
+            'AK': (64.200841, -149.493673), # Alaska
+            'AZ': (33.729759, -111.431221), # Arizona
+            'AR': (34.969704, -92.373123), # Arkansas
+            'CA': (36.116203, -119.681564), # California
+            'CO': (39.059811, -105.311104), # Colorado
+            'CT': (41.597782, -72.755371),  # Connecticut
+            'DE': (39.318523, -75.507141),  # Delaware
+            'FL': (27.766279, -82.640373),  # Florida
+            'GA': (33.040619, -83.643074),  # Georgia
+            'HI': (21.094318, -157.498337), # Hawaii
+            'ID': (44.240459, -114.478828), # Idaho
+            'IL': (40.349457, -88.986137),  # Illinois
+            'IN': (39.849426, -86.258278),  # Indiana
+            'IA': (42.011539, -93.210526),  # Iowa
+            'KS': (38.526600, -96.726486),  # Kansas
+            'KY': (37.668140, -84.670067),  # Kentucky
+            'LA': (31.169546, -91.867805),  # Louisiana
+            'ME': (44.323535, -69.765261),  # Maine
+            'MD': (39.063946, -76.802101),  # Maryland
+            'MA': (42.230171, -71.530106),  # Massachusetts
+            'MI': (43.326618, -84.536095),  # Michigan
+            'MN': (45.694454, -93.900192),  # Minnesota
+            'MS': (32.320, -89.877),        # Mississippi
+            'MO': (38.456085, -92.288368), # Missouri
+            'MT': (47.052632, -110.454353), # Montana
+            'NE': (41.125370, -98.268082),  # Nebraska
+            'NV': (38.313515, -117.055374), # Nevada
+            'NH': (43.452492, -71.563896), # New Hampshire
+            'NJ': (40.298904, -74.521011), # New Jersey
+            'NM': (34.840515, -106.248482), # New Mexico
+            'NY': (42.165726, -74.948051),  # New York
+            'NC': (35.630066, -79.806419),  # North Carolina
+            'ND': (47.528912, -99.784012),  # North Dakota
+            'OH': (40.388783, -82.764915),  # Ohio
+            'OK': (35.565342, -96.928917),  # Oklahoma
+            'OR': (44.572021, -122.070938), # Oregon
+            'PA': (40.590752, -77.209755),  # Pennsylvania
+            'RI': (41.680893, -71.51178),  # Rhode Island
+            'SC': (33.856892, -80.945007),  # South Carolina
+            'SD': (44.299782, -99.438828),  # South Dakota
+            'TN': (35.747845, -86.692345),  # Tennessee
+            'TX': (31.054487, -97.563461),  # Texas
+            'UT': (40.150032, -111.862434), # Utah
+            'VT': (44.045876, -72.710686),  # Vermont
+            'VA': (37.769337, -78.169968),  # Virginia
+            'WA': (47.400902, -121.490494), # Washington
+            'WV': (38.491226, -80.954453),  # West Virginia
+            'WI': (44.268543, -89.616508),  # Wisconsin
+            'WY': (42.755966, -107.302490), # Wyoming
         }
                     
     def _create_search_grid(self, center_lat, center_lng, km_step):
