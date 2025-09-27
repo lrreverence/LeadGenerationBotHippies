@@ -1,0 +1,44 @@
+Subject: Wholesale Opportunity – Hippies Heaven Products
+
+<html>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+  <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
+    <h2 style="color: #2c5530;">Hippies Heaven Wholesale Opportunity</h2>
+    
+    <p>Hello {Name},</p>
+    
+    <p>I hope this email finds you well. I'm reaching out from <strong>Hippies Heaven</strong>, a leading wholesale distributor of premium CBD and hemp-derived products.</p>
+    
+    <p>We specialize in providing high-quality products to smoke shops, vape stores, and retail locations across Illinois and Missouri. Our product line includes:</p>
+    
+    <ul>
+      <li>Premium CBD oils and tinctures</li>
+      <li>Delta-8 and Delta-9 products</li>
+      <li>Hemp flower and pre-rolls</li>
+      <li>Edibles and gummies</li>  
+      <li>Vape cartridges and disposables</li>
+      <li>Accessories and smoking supplies</li>
+    </ul>
+    
+    <p>We offer competitive wholesale pricing, fast shipping, and excellent customer support. All our products are lab-tested and compliant with current regulations.</p>
+    
+    <p>Would you be interested in learning more about our wholesale program? I'd love to discuss how we can help grow your business.</p>
+    
+    <p>You can view our <a href="https://hippiesheavencbd.com/wholesale" style="color: #2c5530; text-decoration: none;">{TrackLink:https://hippiesheavencbd.com/wholesale}</a> or reply to this email to schedule a call.</p>
+    
+    <p>Best regards,<br>
+    <strong>Hippies Heaven Wholesale Team</strong><br>
+    Phone: (555) 123-4567<br>
+    Email: wholesale@hippiesheavencbd.com</p>
+    
+    <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
+    <p style="font-size: 12px; color: #666;">
+      This email is intended for business purposes only. If you no longer wish to receive these communications, 
+      please reply with "UNSUBSCRIBE" and we will remove you from our list immediately. All products are for 
+      adults 21+ only. Hemp-derived products. We Card.
+    </p>
+  </div>
+  
+  {TrackingPixel}
+</body>
+</html>
